@@ -1,0 +1,18 @@
+
+
+
+.clock{
+    width: 350px;
+    height: 350px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.clock::before{
+    content: "";
+    position: relative;
+    top: 0; left: 0;
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+}
