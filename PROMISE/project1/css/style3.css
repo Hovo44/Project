@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+
+:root{
+  --black : #2b2a2c;
+  --gray: #6a696b;
+  --gray-light: #dedede;
+  --white: #fff;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*============= HEADER ==============*/
+
+.header{
+  padding: 1.2rem 0; 
+}
+
+.header_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user{
+  display: flex;
+}
+
+.user img {
+  border-radius: 50%;
+}
+
+.user_content{
+  padding-left: 9px;
+}
+
+.user_name{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user_prof{
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav a{
+  margin-left: 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--black);
+  position: relative;
+}
+
+/*============= INTRO ==============*/
+
+.intro_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-light);
+  padding: 1rem;
+}
+
+.intro_subtitle{
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--black)
+}
+
+.intro_title{
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.intro_text{
+  font-size: 1.1rem;
+  color: var(--gray);
+}
+
+.social{
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.social a {
+  margin-right: 0.75rem;
+}
+
+.social a:hover {
+  transform: rotateX(25deg);
+}
+
+.btn {
+  width: 12.6rem;
+  padding: 1rem 2rem;
+  border-radius: 1.4rem;
+  border: 1px solid var(--gray);
+  font-size: 1rem;
+  color: var(--gray);
+  background: none;
+  opacity: 0.7;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  background: black;
+}
+
+/*============= WORKS ==============*/
+
+.works{
+  margin-top: 2.5rem;
+}
+
+.works_title{
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.works_inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.work{
+  box-shadow: 0 0 4px var(--gray);
+  border-radius: 10px;
+}
+
+.work:hover{
+  box-shadow: 0 0 25px var(--gray);
+}
+
+.work_content{
+  padding: 1rem 0.8rem;
+}
+
+.work_cat{
+  font-size: 0.75rem;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.work_shop{
+  display: flex;
+  justify-content: space-between;
+}
+
+.work_shop p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+
+/*============= ABOUT ==============*/
+
+.about{
+  margin-top: 7rem;
+}
+
+.about_inner{
+  display: flex;
+  justify-content: center;
+}
+
+.about_photo{
+  max-width: 49%;
+}
+
+.about_content{
+  width: 49%;
+  padding-left: 4.2rem;
+  padding-top: 4.6rem;
+}
+
+.about_title{
+  font-size: 2.9rem;
+  font-weight: bold;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.about_bigtitle{
+  font-size: 5.7rem;
+  font-weight: bold;
+  color: var(--gray-light);
+  text-transform: uppercase;
+}
+
+.about_text{
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 3.1rem;
+  line-height: 1.5rem;
+}
+
+
+/*============= REVIEWS ==============*/
+
+.reviews{
+  background: #332f30 url("../images/reviews.png") center no-repeat;
+  background-color:  #332f30;
+  background-image: url("../images/reviews.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 4.6rem;
+  margin-top: 7rem;
+}
+
+.reviews_inner{
+  width: 100%;
+  max-width: 830px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.reviews_text{
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.reviews_author{
+  position: absolute;
+  left: calc(50% - 50px); 
+  margin-top: 25px;
+}
+
+.reviews_company{
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.reviews_name{
+  font-size: 0.9rem;
+  color: var(--gray);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.star_unactive{
+  opacity: 0.3;
+}
+
+
+/*============= COURSES ==============*/
+
+
+.courses{
+  margin-top: 13rem;
+}
+
+
+/*============= FOOTER ==============*/
+
+.footer{
+  background: var(--black);
+  padding: 1rem 0;
+}
+
+.footer_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_info{
+  display: flex;
+  align-items: center;
+}
+
+.footer_copyright{
+  font-size: 0.9rem;
+  color: #8d8d8e;
+  border-right: 1px solid #8d8d8e;
+  padding-right: 1.5rem;
+  margin-right: 1rem;
+}
+
+.footer_social{
+  display: flex;
+}
+
+.footer_social a{
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+
+.footer_nav {
+  display: flex;
+}
+
+.footer_nav a{
+  text-decoration: none;
+  color: #8d8d8e;
+  font-size: 0.9rem;
+  margin-left: 1.2rem;
+}
